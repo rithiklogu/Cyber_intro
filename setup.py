@@ -10,7 +10,7 @@ def get_requirements() -> List[str]:
 
             for requirement in lines:
                 requirement = requirement.strip()  # Remove spaces & newlines
-                print("Processing requirement:", requirement)  # Debugging line
+                print(requirement)  # Debugging line
                 
                 if requirement and requirement != "-e .":
                     requirements_lst.append(requirement)
@@ -20,4 +20,15 @@ def get_requirements() -> List[str]:
 
     return requirements_lst
 
-print("Final requirements list:", get_requirements())
+print(get_requirements())
+
+setup(
+    name='Cyber_intro',
+    version='0.0.1',
+    author='rithik',
+    author_email='rithiklogu.bh@gmail.com',
+    packages=find_packages(),
+    install_requires=get_requirements()
+
+)
+
