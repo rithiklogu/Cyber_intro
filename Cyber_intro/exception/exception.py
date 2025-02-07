@@ -1,6 +1,6 @@
 import sys
 import os
-from Cyber_info.logging import Logger
+from Cyber_intro.logging.logger import logging
 
 class CyberException(Exception):
     def __init__(self, error_message, error_details: sys):

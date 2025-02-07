@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 from dotenv import load_dotenv
 from Cyber_intro.exception.exception import CyberException
-from Cyber_intro.logging.logger import Logging
+from Cyber_intro.logging.logger import logging
 
 # Load environment variables from .env file
 load_dotenv()
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     DATABASE = "CYBER_INTRO"
     COLLECTION = "CyberData"
 
-    # Create an instance of CyberDataHandler
+    # Create an instance of CyberDataHandler        
     cyber_obj = CyberDataHandler()
 
     # Convert CSV to JSON
